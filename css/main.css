@@ -83,14 +83,15 @@ textarea {
   resize: vertical;
 }
 
-/* ==========================================================================
+/* ======================
    Author's custom styles
-   ========================================================================== */
+   ====================== */
 
 /* General Styles */
 
 html { 
-  font-size: 1rem;
+  /* font-size: 1rem; */ /* --- ### --- */
+  font-size: 16px;
 }
   
 body {
@@ -112,6 +113,7 @@ a {
   text-decoration: none;
 }
  
+/* --- ### (Why is this commented out?) ### --- */
 /* h1 {
   font-size: 2.25em;  * 36px; *
   line-height: 1.194; * 43px *
@@ -119,7 +121,8 @@ a {
   font-weight: 500;
 } */
 
-/* Give your h2, h3 & h4, and paragraphs a font size based on 1em = 16px */
+/* Give your h2, h3 & h4, and paragraphs a font size based on 
+   1em = 16px */
 
 h2 {
   font-family: 'Poppins', sans-serif;
@@ -359,9 +362,9 @@ input[type=button] {
   margin: 20px 0;
 }
 
-/* ==========================================================================
-   About Page
-   ========================================================================== */
+/* ==========
+   About page
+   ========== */
 
 /* Mission */
 .mission {
@@ -382,9 +385,9 @@ input[type=button] {
 }
 
 
-/* ==========================================================================
-   FAQ Page
-   ========================================================================== */
+/* ========
+   FAQ page
+   ======== */
 
 /* FAQ */
 .faq {
@@ -417,9 +420,9 @@ input[type=button] {
 } 
 
  
-/* ==========================================================================
+/* ==============
    Helper classes
-   ========================================================================== */
+   ============== */
 
 /*
  * Hide visually and from screen readers
@@ -505,8 +508,10 @@ input[type=button] {
    Modify as content requires.
    ========================================================================== */
 
+/* ------------- Tablet ------------- */ 
+
 @media only screen and (min-width: 768px) {
-  /* Tablet styles */
+  
 
 /*  h1 {
     font-size: 3em; * 48px *
@@ -515,7 +520,10 @@ input[type=button] {
 
   h2 {
     font-size: 2.25em; /* 36px */
-    line-height: 1.333 ;/* 48px */
+    /* --- A number that will be multiplied 
+           with the current font-size 
+           to set the line height --- */
+    line-height: 1.333 ; /* 48px */
   }
 
   h3 {
@@ -538,13 +546,13 @@ input[type=button] {
     justify-content: space-between;
   }
 
-  /* header .content-wrapper img {
+  header .content-wrapper img {
 
-    width: 60%;
+    width: 30%;
     /* display: flex;
     justify-content: center; */
-    /* margin: 0; *
-  } */
+    /* margin: 0; */
+  }
 
   header nav {
     width: 20%
@@ -649,9 +657,9 @@ input[type=button] {
     /* font-size: .875em; */
   }
 
-  /* ========================================================================== 
-     About Page 
-     ========================================================================== */
+  /* ------------------- 
+     Tablet - About Page 
+     ------------------- */
 
   .mission-content {
     display: flex;
@@ -678,9 +686,9 @@ input[type=button] {
     font-size: 1.5em;
   }
 
-  /* ========================================================================== 
-     FAQ Page 
-     ========================================================================== */
+  /* ----------------- 
+     Tablet - FAQ Page 
+     ----------------- */
 
   .faq .content-wrapper {
     justify-content: space-between;
@@ -705,9 +713,10 @@ input[type=button] {
     line-height: 1.5; /* 24px; */
   }
 
-} /* ------------- Tablet styles end ------------- */
+} /* ------------- End of Tablet ------------- */
 
 /* ------------- DESKTOP ------------- */ 
+
 @media only screen and (min-width: 1200px) {
 
   header {
@@ -731,10 +740,6 @@ input[type=button] {
   .content-wrapper {
     max-width: 960px;
   }
-
-  /* header {
-    padding: 15px 0;  /* 0.9375em *
-  } */
 
   .hero-area h1 {
     font-size: 3.75em;
@@ -767,9 +772,9 @@ input[type=button] {
   }
 
 
-  /* ========================================================================== 
-     About Page 
-     ========================================================================== */
+  /* ==================== 
+     Desktop - About page 
+     ==================== */
  
   .mission h2,
   .contact-section .content-wrapper h2 {
@@ -777,9 +782,10 @@ input[type=button] {
     font-size: 3em; /* 48px  */
   }
 
-  /* ========================================================================== 
-     FAQ Page 
-     ========================================================================== */
+
+  /* ================== 
+     Desktop - FAQ page 
+     ================== */
 
   .faq h2 {
     width: 100%;
