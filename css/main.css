@@ -144,7 +144,7 @@ p {
 }
 
 img {
-  width: 100%;
+  width: 200%;
 }
 
 figure {
@@ -194,7 +194,7 @@ header figure {  /* --- */
 header nav {
   width: 60%;
   font-size: 1.125em; /* 18px */
-  font-weight: 700;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
@@ -356,10 +356,7 @@ input[type=button] {
 }
 
 .reviews h3 {
-  /* width: 75%; ### ??? ### */
   width: 55%;
-  /* margin-top: 0; */
-  margin: 20px 0;
 }
 
 /* ==========
@@ -615,7 +612,7 @@ input[type=button] {
   }
 
   .reviews h2 {
-    width: 85%;
+    width: 77%;
   }
 
   .reviews article figure,
