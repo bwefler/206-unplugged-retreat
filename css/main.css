@@ -316,6 +316,11 @@ input[type=button] {
   margin-bottom: 60px; /* 3.75em */
 }
 
+.features i {
+	font-size: 3.75em;
+    margin-bottom: 40px;
+}
+
 /* Features article */
 .features article {
   width: 63%;
