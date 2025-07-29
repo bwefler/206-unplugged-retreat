@@ -90,7 +90,6 @@ textarea {
 /* General Styles */
 
 html { 
-  /* font-size: 1rem; */ /* --- ### --- */
   font-size: 16px;
 }
   
@@ -150,9 +149,8 @@ address {
 }
 
 .content-wrapper {
-  /* outline: 2px dashed blue; /*--- ### --- */
   width: 90%;
-  margin: 50px 0; /* --- 50px 3.125em--- */
+  margin: 50px 0;
 }
 
 /* -------------------- Base Header - Footer Styles -------------------- */
@@ -160,7 +158,7 @@ address {
 header {
   display: flex;
   justify-content: center;
-  padding: 15px 0; /* ---  0.9375em --- */
+  padding: 15px 0;
   background-color: #202322;
 }
 
@@ -172,7 +170,7 @@ header .content-wrapper {
   margin: 0;
 } 
 
-header figure {  /* --- */
+header figure {
   width: 60%;
 }
 
@@ -217,13 +215,12 @@ footer .content-wrapper {
 }
 
 footer .contact {
-  margin-bottom: 50px; /* 2.7777em; */ 
+  margin-bottom: 50px;
 }
 
 
 footer .social-icons {
   display: flex;
-  /* justify-content: space-around; */
   justify-content: space-evenly;
   align-items: center;
 }
@@ -310,7 +307,7 @@ input[type=button] {
 }
 
 .features h2 {
-  margin-bottom: 60px; /* 3.75em */
+  margin-bottom: 60px;
 }
 
 .features i {
@@ -332,11 +329,6 @@ input[type=button] {
   flex-flow: row wrap;
 }
 
-/* Features items */
-/* .features .features-items .fontawesome-icons {
-  size: 60px;
-} */
-
 .features p {
   margin: 0;
   text-align: center;
@@ -350,8 +342,8 @@ input[type=button] {
 }
 
 .reviews h2 {
-  margin-bottom: 40px; /* 3.75em */
   line-height: 1; /* h2: 30px */
+  margin-bottom: 40px;
 }
 
 .reviews h3 {
@@ -420,9 +412,9 @@ input[type=button] {
 
 /* FAQ */
 .faq {
+  background-color: #527158;
   display: flex;
   justify-content: center;
-  background-color: #527158;
 }
 
 /* FAQ content wrapper */
@@ -431,12 +423,11 @@ input[type=button] {
   justify-content: center;
   align-items: flex-start;
   flex-flow: row wrap;
-  margin: 50px 0 0 0; /* 3.125em */
+  margin: 50px 0 0 0;
 }
 
 .faq h2 {
   margin-bottom: 40px;
-  /* margin-left: 0; */
   line-height: 1; /* h2: 30px */
 }
 
@@ -531,27 +522,20 @@ input[type=button] {
   clear: both;
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
+/* =================================================== 
+   Media Queries
+   These override the primary ('mobile first') styles.
    Modify as content requires.
-   ========================================================================== */
+   =================================================== */
 
-/* ------------- Tablet ------------- */ 
+/* ------
+   Tablet 
+   ------ */ 
 
 @media only screen and (min-width: 768px) {
   
-
-/*  h1 {
-    font-size: 3em; * 48px *
-    line-height: 1; * 48px *
-  } */
-
   h2 {
     font-size: 2.25em; /* 36px */
-    /* --- A number that will be multiplied 
-           with the current font-size 
-           to set the line height --- */
     line-height: 1.333 ; /* 48px */
   }
 
@@ -562,12 +546,12 @@ input[type=button] {
 
   .content-wrapper {
     max-width: 640px; 
-    margin: 100px 0; /* 6.25em */
+    margin: 100px 0;
   }
 
   /* Header */
   header {
-    padding: 33px 0; /* 2.0625em */
+    padding: 33px 0;
   }
 
   header .content-wrapper {
@@ -576,11 +560,7 @@ input[type=button] {
   }
 
   header .content-wrapper img {
-
     width: 50%;
-    /* display: flex;
-    justify-content: center; */
-    /* margin: 0; */
   }
 
   header nav {
@@ -589,7 +569,6 @@ input[type=button] {
 
   header nav ul {
     justify-content: space-between;
-    /* margin-left: -50px; */
   }
 
   .header-divider {
@@ -609,7 +588,7 @@ input[type=button] {
 
   /* Aside */
   aside .content-wrapper {
-    margin: 50px 0; /* 3.125em */
+    margin: 50px 0;
     display: flex;
     justify-content: space-between;
     align-content: flex-start;
@@ -647,24 +626,17 @@ input[type=button] {
     width: 77%;
   }
 
-
-  /* --- ### TRY TO FIX IMAGE AND REVIEW ALIGNMENT ### --- */
   .reviews article figure,
   .reviews article div {
     width: 49%;    
   }
 
-  /* --- --- --- */
   .reviews h3 {
     width: 75%;
     margin: 0;
   }
 
   /* Footer */
-  /* footer h4 {
-    font-size: 24px; /* 1.333em; h4: 18px *
-  } */
-
   footer .content-wrapper {
     width: 65%;    
   }
@@ -689,7 +661,6 @@ input[type=button] {
     line-height: 1.286;
   }
 
-  /* --- ### --- */
   footer .social-icons {
     width: 12.5em;
     justify-content: space-between;
@@ -697,7 +668,6 @@ input[type=button] {
 
   footer .copyright {
     width: 100%;
-    /* font-size: .875em; */
   }
 
   /* ------------------- 
@@ -708,7 +678,7 @@ input[type=button] {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding-top: 20px; /* 1.25em; */
+    padding-top: 20px;
   }
 
   .mission-content p {
@@ -756,9 +726,11 @@ input[type=button] {
     line-height: 1.5; /* 24px; */
   }
 
-} /* ------------- End of Tablet ------------- */
+} /* ------------- End of Tablet styles ------------- */
 
-/* ------------- DESKTOP ------------- */ 
+/* -------
+   DESKTOP
+   ------- */ 
 
 @media only screen and (min-width: 1200px) {
 
@@ -846,11 +818,11 @@ input[type=button] {
   /* Style adjustments for high resolution devices */
 }
 
-/* ==========================================================================
+/* ====================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
    https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
+   ==================================================== */
 
 @media print {
   *,
