@@ -96,7 +96,9 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
-  color: #e2e3ed;
+  /* color: #e2e3ed; */
+  /* *** Using a lighter text color for better contrast */
+  color: #E9EAF1;
   text-align: left;
 }
 
@@ -115,12 +117,18 @@ a {
 /* Give your h2, h3 & h4, and paragraphs a font size based on 
    1em = 16px */
 
-h2 {
+  /* *** Added h1 for the mission page */
+  .mission h1,
+  h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em; /* 30px;  */
   font-weight: 500;
+  margin: 0;
 }
- 
+
+/* *** Added h2 for homepage form and faq page */
+.form-description h2,
+.faq h2,
 h3, 
 h4 {
   font-family: 'Poppins', sans-serif;
@@ -281,6 +289,8 @@ input[type=text] {
   color: #2a423a;
   font-style: italic;
   padding: 1em;
+  /* *** Created space between label and input */
+  margin-top: 10px;
 }
  
 input[type=button] {
@@ -426,7 +436,8 @@ input[type=button] {
   margin: 50px 0 0 0;
 }
 
-.faq h2 {
+/* *** Changed faq page h2 to h1 */
+.faq h1 {
   margin-bottom: 40px;
   line-height: 1; /* h2: 30px */
 }
@@ -435,6 +446,8 @@ input[type=button] {
   margin-bottom: 50px;
 }
 
+/* *** Added h2 for faq page */
+.faq-content h2,
 .faq-content h4 {
   line-height: 1.3333; /* 24px */
 } 
@@ -534,11 +547,16 @@ input[type=button] {
 
 @media only screen and (min-width: 768px) {
   
+  /* *** Added h1 for mission and faq pages */
+  .mission h1,
+  .faq h1,
   h2 {
     font-size: 2.25em; /* 36px */
     line-height: 1.333 ; /* 48px */
   }
 
+  /* *** Added h2 for homepage form */
+  .form-description h2,
   h3 {
     font-size: 1.5em; /* 24px */
     line-height: 1.25; /* 30px */
@@ -652,6 +670,8 @@ input[type=button] {
     margin-bottom: 0;
   }
 
+  /* *** Added h3 for the footer */
+  footer h3,
   footer h4 {
     font-size: 1.5em;
     margin-bottom: 40px;
@@ -695,6 +715,8 @@ input[type=button] {
     align-items: flex-start;
   }
 
+  /* *** Added h3 for the about page */
+  .contact-content h3,
   .contact-content h4 {
     font-size: 1.5em;
   }
@@ -707,10 +729,14 @@ input[type=button] {
     justify-content: space-between;
   }
 
+  /* *** Added h1 for the faq page */
+  .faq h1,
   .faq h2 {
     width: 100%;
   }
 
+  /* *** Added h2 for the faq page */
+  .faq h2,
   .faq h4,
   .faq p {
      font-size: 0.875em; /* 14px;*/
@@ -726,10 +752,10 @@ input[type=button] {
     line-height: 1.5; /* 24px; */
   }
 
-} /* ------------- End of Tablet styles ------------- */
+}
 
 /* -------
-   DESKTOP
+   Desktop
    ------- */ 
 
 @media only screen and (min-width: 1200px) {
@@ -742,6 +768,7 @@ input[type=button] {
      font-size: 2.25em; /* 36px */
   }
 
+  .form-description h2,
   h3,
   h4 {
     font-size: 1.875em; /* 30px */
@@ -782,6 +809,12 @@ input[type=button] {
     width: 42%;
   }
 
+  /* *** Added h3 for the footer */
+  footer h3,
+  footer h4 { 
+    font-size: 1.875em;
+  }
+
   /* ==================== 
      Desktop - About page 
      ==================== */
@@ -792,16 +825,24 @@ input[type=button] {
     font-size: 3em; /* 48px  */
   }
 
+  /* *** h3 for the about page */
+  .contact-content h3,
+  .contact-content h4 {
+    font-size: 1.875em;
+  }
 
   /* ================== 
      Desktop - FAQ page 
      ================== */
 
-  .faq h2 {
+  /* *** No longer needed since header hierarchy updated */
+  /* .faq h2 {
     width: 100%;
-    font-size: 3em; /* 48px */
-  }
+    font-size: 3em; /* 48px **
+  } */
 
+  /* *** Added h2 for the faq page */
+  .faq h2,
   .faq h4,
   .faq p {
     font-size: 18px;
@@ -809,7 +850,7 @@ input[type=button] {
   }
 
 
-} /* ------------- Desktop styles end ------------- */
+} /* -------------------------- */
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
